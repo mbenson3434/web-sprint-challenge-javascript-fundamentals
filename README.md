@@ -23,28 +23,29 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
-
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-
+    forEach must iterate through the entire array without stopping, does not return a new array and return is optional. map returns a new array but does not change the old array. One might use it to convert data and it does require a return. 
 2. Explain the difference between a callback and a higher order function.
-
+    A callback function is a function that is passed into another function as an argument. The higher order function receives a callback functions.
 3. What is closure?
-
+    Closure has to do with the scope of specific elements. When an inner scope references a variable created in the outter scope. 
 4. Describe the four rules of the 'this' keyword.
-
+    -If function is in global scope this will be window.
+    -The object to the left of the dot refers to this when a function is called.
+    -When constructor function is used this refers to the specific instance of that object that is created. 
+    - .call and .apply explicitly define this.
 5. Why do we need super() in an extended class?
-
+    super() tells the extended class who its parent is. 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 - [ ] Push commits: git push origin `<firstName-lastName>`
 
